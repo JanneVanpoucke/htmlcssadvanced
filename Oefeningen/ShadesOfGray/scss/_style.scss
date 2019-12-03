@@ -3,6 +3,8 @@
 .body{
 
   font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  color: #999999;
 }
 .nav-link:hover{
   border-bottom: 2px solid #3baafe !important;
@@ -48,6 +50,10 @@ article>div{ /*/padding op mijn eerste div van article*/
   font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
   color: #777777 !important;
+}
+.streepjetussentitel1{
+  border-bottom: 2px solid #3baafe;
+  margin-left: 5px;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
