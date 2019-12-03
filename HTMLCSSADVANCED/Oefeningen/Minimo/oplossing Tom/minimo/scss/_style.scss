@@ -1,0 +1,61 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+/** GENERAL **/
+/* LETTERTYPES */
+@font-face{
+  font-family:pfr;
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+}
+@font-face{
+  font-family:ubl;
+  src:url('../fonts/Ubuntu/Ubuntu-Light.ttf');
+}
+
+body{
+  font-family:pfr;
+  font-size:14px;
+}
+.navbar-brand{
+  font-family: 'Inconsolata', monospace;
+  font-size:30px;
+}
+h2{
+  font-family:ubl;
+  color:#b4ad9e;
+}
+section{
+  margin: 5% 0px;
+}
+h3, .category{
+  margin-top:8.3%;
+}
+h3{
+  margin-bottom:8.3%;
+}
+.categoryp{
+  margin-bottom: 30%;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  h2{
+    font-size:14px;
+  }
+  /*section{
+    margin: 100px 0px;
+  }*/
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+
