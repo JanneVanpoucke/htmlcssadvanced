@@ -40,6 +40,15 @@ article>div{ /*/padding op mijn eerste div van article*/
 .bollekesp{
   margin-bottom: 25px;
 }
+.grijzeachtergrond{
+  background-color: #f5f5f5;
+}
+.tussentitel{
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  color: #777777 !important;
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
