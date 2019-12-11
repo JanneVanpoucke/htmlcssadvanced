@@ -113,15 +113,33 @@ article>div{ /*/padding op mijn eerste div van article*/
   /* hier zet je de backgroundimage die je moet scrollen */
   background-image: url(../images/verkeer.jpg);
   /* FULL HEIGHT */
-  height: 750px; /* HOOGTE VAN SCHERMWEERGAVE */
+ /* height: 750px; !* HOOGTE VAN SCHERMWEERGAVE *!*/
   /* CREATIE VAN HET PARALLAX SCROLL EFFECT */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
+.p2{
+  color: #999999 !important;
+}
+.ptpb{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*Sectie 4*/
+.streepjetussentitel2{
+  border-bottom: 3px solid #b6b6b6;
+  margin-left: 5px;
+  filter: drop-shadow(2px 2px #cbcbcb);
+}
+.titelsectie4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24pt;
+  color: #3baafe !important;
+  font-weight: bold !important;
+  filter: drop-shadow(2px 2px #dadada);
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
