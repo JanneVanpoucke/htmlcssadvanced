@@ -122,6 +122,7 @@ article>div{ /*/padding op mijn eerste div van article*/
 }
 .p2{
   color: #999999 !important;
+  font-size: 14pt;
 }
 .ptpb{
   padding-top: 50px;
@@ -139,6 +140,78 @@ article>div{ /*/padding op mijn eerste div van article*/
   color: #3baafe !important;
   font-weight: bold !important;
   filter: drop-shadow(2px 2px #dadada);
+}
+.parallax3{
+  /* hier zet je de backgroundimage die je moet scrollen */
+  background-image: url(../images/metro.jpg);
+  /* FULL HEIGHT */
+  /* height: 750px; !* HOOGTE VAN SCHERMWEERGAVE *!*/
+  /* CREATIE VAN HET PARALLAX SCROLL EFFECT */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titelsectie5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24pt;
+  color: #7a7878 !important;
+  font-weight: bold !important;
+  filter: drop-shadow(2px 2px #dadada);
+}
+.bollekeschaduw{
+  margin-top: -50px;
+  border:5px solid #fff;
+  box-shadow: 2px 2px #dadada;
+}
+.ptpb2{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.nameblue{
+  color: #3baafe;
+  font-size: 14pt;
+  transform: skewX(20deg);
+}
+.spring{
+  margin-top: -40px;
+}
+.bollekeschaduw2{
+  border:5px solid #fff;
+  box-shadow: 2px 2px #dadada;
+}
+.witkotje{
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px #dadada;
+  transition: transform 0.3s;
+  transform: skewX(-20deg);
+  padding-left: 25%;
+}
+.grijskotje{
+  background-color: #e6e6e6;
+  box-shadow: 2px 2px #dadada;
+  margin-top: -20;
+  transition: transform 0.3s;
+  transform: skewX(-20deg);
+  padding-left: 25%;
+}
+.tekstsectie6{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  color: #999999 !important;
+  transform: skewX(20deg);
+}
+.positie{
+  position: relative;
+}
+.positie2{
+  position: absolute;
+  z-index: 10;
+}
+.positie3{
+  position: absolute;
+  z-index: 5;
+  left: 27%;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
