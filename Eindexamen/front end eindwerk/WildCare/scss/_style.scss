@@ -32,6 +32,16 @@
   src: url("../fonts/Lato-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   url("../fonts/Lato-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
+@font-face {
+  font-family: 'PlayfairDisplayRegular';
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Regular.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'PlayfairDisplayItalic';
+  src: url("../fonts/PlayfairDisplay-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 body{
   font-family: LatoBold, sans-serif;
@@ -54,6 +64,14 @@ body{
   font-family: DeannasIvy, sans-serif;
   font-size: 2rem;
   color: #006a4e;
+}
+a:hover span{
+  font-family: DeannasIvy, sans-serif;
+  font-size: 1rem;
+  color: #006a4e;
+}
+.letterhover{
+
 }
 .winkelkarretje{
   color: #ffffff;
@@ -116,6 +134,15 @@ body{
   text-decoration:none;
 }
 
+/*Section one*/
+
+.bgsectionone{
+  background-color: #f6f2f1;
+}
+.fontOne{
+  font-family: PlayfairDisplayRegular,sans-serif;
+  font-size: 4rem;
+}
 /*Shoppingcart*/
 
 #itemCount {
