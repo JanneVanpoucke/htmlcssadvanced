@@ -38,14 +38,25 @@
   url("../fonts/PlayfairDisplay-Regular.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
+  font-family: 'PlayfairDisplayBold';
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Bold.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
   font-family: 'PlayfairDisplayItalic';
   src: url("../fonts/PlayfairDisplay-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   url("../fonts/PlayfairDisplay-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
+@font-face {
+  font-family: 'PlayfairDisplayBoldItalic';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-BoldItalic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 body{
-  font-family: LatoBold, sans-serif;
+  font-family: LatoRegular, sans-serif;
   color: black !important;
+  font-size: 0.5rem;
 }
 /*START HEADER*/
 
@@ -159,7 +170,6 @@ body{
   background: white;
   color:  #006a4e;
 }
-
 .search_icon{
   height: 40px;
   width: 40px;
@@ -191,12 +201,13 @@ body{
 }
 .paragraphSectionOne{
   font-family: PlayfairDisplayItalic,sans-serif;
-  font-size: 1rem;
+  font-size: 1,5rem;
 }
 .shopBtn{
   border-color: #006a4e;
   color: #006a4e;
-  border-radius: 50%;
+  border-radius: 35px;
+/*  border-radius: 50%;*/
   font-family: LatoBold,sans-serif;
   font-size: 1rem;
   margin-left: 2%;
@@ -205,6 +216,9 @@ body{
 .shopBtn:hover{
   background-color: #006a4e;
   color: #ffffff;
+}
+.spring{
+  margin-top: -50px;
 }
 /*einde section one*/
 /*EINDE HEADER*/
@@ -217,16 +231,29 @@ body{
 }
 .captionMain{
   font-family: PlayfairDisplayItalic,sans-serif;
-  font-size: 1rem;
+  font-size: 0.5rem;
   color: #006a4e;
 }
 .paragraphtwo{
-  font-family: ;
+  font-family: PlayfairDisplayItalic,sans-serif;
+  font-size: 1rem;
 }
-
-
-/*Shoppingcart2*/
-
+.paragraphtwobold{
+  font-family: PlayfairDisplayBoldItalic,sans-serif;
+  font-size: 1rem;
+}
+.ptpb-7{
+  padding-top: 3%;
+/*  padding-bottom: 6%;*/
+}
+.littleTitle{
+  font-family: PlayfairDisplayBold,sans-serif;
+  font-size: 0.5rem;
+}
+/*Sectie 3*/
+.bgsectionthree{
+  background-color: #f8f5ec;
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
