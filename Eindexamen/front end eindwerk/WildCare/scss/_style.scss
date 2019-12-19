@@ -120,7 +120,7 @@ body{
   -webkit-animation-name: hvr-ripple-in;
   animation-name: hvr-ripple-in;
 }
-.winkelkarretje{
+/*.winkelkarretje{
   color: black;
   margin-bottom: auto;
   margin-top: auto;
@@ -136,16 +136,30 @@ body{
   background-color: #ffffff;
 }
 .user:hover{
-  color: #f4c2c2 !important;
-}
+  color: #f4c2c2 !important;*/
+/*}*/
 /*Zoekicoonsnippet*/
+.form-control-borderless {
+  border: none;
+}
 
-.searchbar{
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn{
+  border:none !important;
+}
+.fa-search{
+  color: #006a4e !important;
+}
+/*.searchbar{
   margin-bottom: auto;
   margin-top: auto;
   background-color: #006a4e;
   border-radius: 30px;
-/*  padding: 20%;*/
+!*  padding: 20%;*!
 }
 
 .search_input{
@@ -157,13 +171,18 @@ body{
   caret-color:transparent;
   line-height: 40px;
   transition: width 0.4s linear;
-}
-
-.searchbar:hover > .search_input{
+}*/
+/*.searchbar:hover > .search_input{
   padding: 0 10px;
   width: 450px;
   caret-color:silver;
   transition: width 0.4s linear;
+}*/
+/*.searchbar:hover > .search_input{
+  padding: 0 0px;
+  width: 5%;
+  caret-color:silver;
+  transition: width 0.1s linear;
 }
 
 .searchbar:hover > .search_icon{
@@ -180,7 +199,7 @@ body{
   border-radius: 50%;
   color:white;
   text-decoration:none;
-}
+}*/
 /*Einde navigatiebar*/
 
 /*Section one*/
@@ -318,7 +337,16 @@ body{
     transform-origin: 50% 100%;
   }
 }
-
+/*Sectie 4*/
+.badge-success{
+  background-color: #ffffff !important;
+  border: 1px solid #006a4e !important;
+  color: #006a4e!important;
+}
+.badge-success:hover{
+  background-color: #006a4e !important;
+  color: #ffffff !important;
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
