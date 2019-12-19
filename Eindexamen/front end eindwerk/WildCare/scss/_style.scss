@@ -54,7 +54,7 @@
 }
 
 body{
-  font-family: LatoRegular, sans-serif;
+  font-family: LatoBold, sans-serif;
   color: black !important;
   font-size: 1rem;
 }
@@ -338,15 +338,15 @@ body{
   }
 }
 /*Sectie 4*/
-.badge-success{
+/*.badgeOne{
   background-color: #ffffff !important;
   border: 1px solid #006a4e !important;
   color: #006a4e!important;
 }
-.badge-success:hover{
+.badgeOne:hover{
   background-color: #006a4e !important;
   color: #ffffff !important;
-}
+}*/
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
@@ -362,4 +362,8 @@ body{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
+}
+///*test*/
+.test{
+  sdfsdfd;
 }
