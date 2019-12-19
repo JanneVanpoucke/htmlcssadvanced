@@ -1,0 +1,311 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+/*Lettertypes*/
+@font-face {
+  font-family: 'DeannasIvy';
+  src: url("../fonts/Deanna's Ivy.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Deanna's Ivy.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'DeannasIvyCaps';
+  src: url("../fonts/Deanna's Ivy Caps.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Deanna's Ivy Caps.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("../fonts/Lato-Regular.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Regular.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url("../fonts/Lato-Bold.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Bold.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../fonts/Lato-Black.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Black.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoItalic';
+  src: url("../fonts/Lato-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'PlayfairDisplayRegular';
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Regular.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'PlayfairDisplayBold';
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Bold.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'PlayfairDisplayItalic';
+  src: url("../fonts/PlayfairDisplay-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'PlayfairDisplayBoldItalic';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/PlayfairDisplay-BoldItalic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body{
+  font-family: LatoRegular, sans-serif;
+  color: black !important;
+  font-size: 1rem;
+}
+/*START HEADER*/
+
+/*Navigatiebar*/
+
+.logoLettertype{
+  font-family: DeannasIvy, sans-serif;
+  font-size: 3rem;
+  color: $forestgreen;
+}
+.navbar-brand{
+  font-size: 2rem;
+}
+.nav-link{
+  color: black !important;
+  font-size: 1rem;
+}
+.nav-link:hover{
+  color: $powderpink !important;
+}
+/* Ripple In */
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-in:before {
+  content: '';
+  position: absolute;
+  border: $powderpink solid 2px;
+  top: -12px;
+  right: -12px;
+  bottom: -12px;
+  left: -12px;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+  -webkit-animation-name: hvr-ripple-in;
+  animation-name: hvr-ripple-in;
+}
+/*Zoekicoonsnippet*/
+.form-control-borderless {
+  border: none;
+}
+.form-control-lg{
+  font-family: LatoBold,sans-serif;
+  color: $forestgreen !important;
+}
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn{
+  border:none !important;
+}
+.fa-search{
+  color:  $forestgreen !important;
+}
+
+/*Einde navigatiebar*/
+
+/*Section one*/
+.bgsectionone{
+  background-color: #f6f2f1;
+}
+.ptpb-6{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.fontOne{
+  font-family: PlayfairDisplayRegular,sans-serif;
+  font-size: 2rem;
+}
+.titleSectionOne{
+  font-family: LatoBlack,sans-serif;
+  font-size: 4rem;
+}
+.paragraphSectionOne{
+  font-family: PlayfairDisplayItalic,sans-serif;
+  font-size: 1.5rem;
+}
+.shopBtn{
+  border: $forestgreen solid 1px!important;
+  color:  $forestgreen;
+  border-radius: 35px;
+  /*  border-radius: 50%;*/
+  font-family: LatoBold,sans-serif;
+  font-size: 1rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.shopBtn:hover{
+  background-color:  $forestgreen;
+  color: #ffffff;
+}
+.spring{
+  margin-top: -40%;
+}
+/*einde section one*/
+/*EINDE HEADER*/
+
+/*START MAIN*/
+/*Sectie1*/
+.headerMain{
+  font-family: LatoBlack,sans-serif;
+  font-size: 2rem;
+}
+.captionMain{
+  font-family: PlayfairDisplayItalic,sans-serif;
+  font-size: 0.5rem;
+  color:  $forestgreen;
+}
+.paragraphtwo{
+  font-family: PlayfairDisplayItalic,sans-serif;
+  font-size: 1rem;
+}
+.paragraphtwobold{
+  font-family: PlayfairDisplayBoldItalic,sans-serif;
+  font-size: 1rem;
+}
+.ptpb-7{
+  padding-top: 3%;
+  /*  padding-bottom: 6%;*/
+}
+.littleTitle{
+  font-family: PlayfairDisplayBold,sans-serif;
+  font-size: 1rem;
+}
+/*Sectie 3*/
+.pt-6{
+  padding-top: 5%;
+}
+.bgsectionthree {
+  background-color: #f8f5ec;
+  padding-bottom: 15%;
+  margin-bottom: 18%;
+}
+.bgsquare{
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.example{
+  position:relative;
+}
+.lemon{
+  position: absolute;
+  z-index: 1;
+  top: 57%;
+  left: 0%;
+  right: 0%;
+}
+.flip-2-hor-top-2 {
+  -webkit-animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+/*Keyframes*/
+/* ----------------------------------------------
+ * Generated by Animista on 2019-12-18 11:20:38
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-2-hor-top-2
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-2-hor-top-2 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(180deg);
+    transform: translateY(-100%) rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes flip-2-hor-top-2 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(180deg);
+    transform: translateY(-100%) rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+/*Sectie 4*/
+.badgeOne{
+  background-color: #ffffff;
+  color: black;
+  border: $powderpink solid 1px;
+}
+.badgeOne:hover{
+  background-color: $powderpink;
+  color: #ffffff;
+}
+.pillText{
+  font-family: LatoBold,sans-serif;
+}
+.price{
+  font-family: PlayfairDisplayBoldItalic,sans-serif;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
